@@ -1,0 +1,323 @@
+.logo{
+    height: 93px;
+    width: 272px;
+    background-image: url("images__1_-removebg-preview.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    margin-top: 210px;
+}
+body{
+    background-image: url("back7.jpeg");
+    background-size: cover;
+
+}
+
+/* Search bar ab relative hai, taake icons hamesha bar ke andar hi rahein */
+.search-bar{
+    position: relative;
+    width: 746px;
+    margin: 7px auto 0;
+}
+.search-bar input:focus{
+    border:2px solid #010101;
+    border-radius: 30px;
+}
+.search-bar input{
+    width: 100%;
+    box-sizing: border-box;
+    height: 57px;
+    border-radius: 30px;
+    border: 1px solid #dfe1e5;
+    padding-left: 54px;
+    padding-right: 120px;
+    font-size: 20px;
+    outline: none;
+}
+#plus-icon{
+    position: absolute;
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+/* Mic aur camera ke buttons */
+.icon-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+#camera-btn{
+    right: 14px;
+}
+#microphone-btn{
+    right: 60px;
+}
+.icon-btn i{
+    font-size: 20px;
+}
+
+/* Hover par grey circle */
+.icon-btn:hover{
+    background-color: #f1f3f4;
+}
+
+/* Tooltip */
+.icon-btn::after{
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 6px;
+    padding: 5px 9px;
+    background: #3c4043;
+    color: #fff;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease;
+    z-index: 10;
+}
+.icon-btn:hover::after{
+    opacity: 1;
+    transition-delay: 0.4s;
+}
+#plus-icon:hover{
+    background-color: #f1f3f4;
+    border-radius: 50%;
+}
+#plus-icon::after{
+    content: "Add Something";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 6px;
+    padding: 5px 9px;
+    background: #3c4043;
+    color: #fff;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease;
+}
+#plus-icon:hover::after{
+    opacity: 1;
+    transition-delay: 0.4s;
+}
+.gmail{
+    position: absolute;
+    top: 20px;
+    right: 200px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+.gmail:hover{
+    text-decoration: underline;
+}
+.images{
+    position: absolute;
+    top: 20px;
+    right: 140px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+.images:hover{
+    text-decoration: underline;
+
+}
+#grip-icon{
+    position: absolute;
+    top: 20px;
+    right: 93px;
+    color: #ffffff;
+    font-size: 18px;
+}
+#grip-icon::after{
+    content: "Google Apps";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 6px;
+    padding: 5px 9px;
+    background: #3c4043;
+    color: #fff;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease;
+}
+#grip-icon:hover::after{
+    opacity: 1;
+    transition-delay: 0.4s;
+}
+
+.dp-logo{
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url("WhatsApp\ img2.jpeg");
+    background-size: cover;
+}
+.dp-logo{
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    color: #ffffff;
+    font-size: 10px;
+}
+.dp-logo::after{
+    content: "Ruman Ali";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 6px;
+    padding: 5px 9px;
+    background: #3c4043;
+    color: #fff;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease;
+}
+.dp-logo:hover::after{
+    opacity: 1;
+    transition-delay: 0.4s;
+}
+/* .youtube-box{
+    height: 112px;
+    width: 112px;
+    border-radius: 7px;
+    margin-left: 310px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.youtube-box:hover{
+    background-color: #8484842a;
+}
+.youtube-logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(48, 47, 47);
+    transform: translateY(-17px);
+    background-image: url("Red-YouTube-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 100px;
+
+}
+.anchor-youtube{
+    text-decoration: none;
+}
+.text-youtube{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 5px;
+    padding-top: 100px;
+} */
+
+/* ===== Shortcuts (search bar ke neeche) ===== */
+.shortcuts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1450px;
+    max-width: 100%;
+    margin: 50px auto 0;
+}
+.shortcut{
+    width: 112px;
+    height: 112px;
+    margin: 0 14px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 14px;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: background-color 0.15s ease;
+}
+/* Hover par halka sa grey box */
+.shortcut:hover{
+    background-color: rgba(255, 255, 255, 0.18);
+}
+.shortcut-circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #2b2433;
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+.shortcut-name{
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 6px;
+    box-sizing: border-box;
+}
+.show-less{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Yahan apni pictures lagao (comment hata kar file ka naam likho) */
+#sc-youtube{ background-image: url("youTube-logo-removebg-preview.png"); }
+#sc-whatsapp{ background-image: url("whatsapp-removebg-preview.png"); }
+#sc-leopard{ background-image: url("Leopards-Logo-removebg-preview.png"); }
+#sc-ads{ background-image: url("ads_manager-removebg-preview.png"); }
+#sc-chatgpt{ background-image: url("chatgpt-logo-removebg-preview.png"); }
+#sc-instagram{ background-image: url("insta_logo-removebg-preview\ \(1\).png"); }
+#sc-tiktok{ background-image: url("tik-tok-logo-png-80f7-removebg-preview.png"); }
+#sc-facebook{ background-image: url("facebook.png"); }
+#sc-business{ background-image: url("images-removebg-preview.png"); }
+#sc-daad{ background-image: url("images-removebg-preview\ \(1\).png"); }
